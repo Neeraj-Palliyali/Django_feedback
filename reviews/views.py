@@ -11,9 +11,11 @@ from .models import Review
 
 class ReviewView(CreateView):
     model = Review
-    fields = ReviewForm
+    form_class = ReviewForm
     template_name = "reviews/review.html"
-    success_url = "/thank_you"
+    success_url = "/thank-you"
+    # context_object_name="forms"
+
 class ThankYouView(TemplateView):
     template_name = "reviews/thankyou.html"
 

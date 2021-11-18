@@ -15,7 +15,7 @@ class ReviewForm(forms.ModelForm):
 
         error_messages = {
             "user_name": {
-                "required": "Your must not be empty",
+                "required": "Your name must not be empty!",
                 "max_length": "Please enter a shorter name!"
             }
         }
